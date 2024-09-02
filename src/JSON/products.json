@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "productName": "Nike P-6000 Premium",
+    "category": "Shoes",
+    "image": "/assets/nike-p6000.png",
+    "discountPercent": 20,
+    "price": 100.00,
+    "discountedPrice": 80.00,
+    "rating": 4.5,
+    "description": "The Nike P-6000 Premium features a sleek and stylish design with premium materials for ultimate comfort and durability. Ideal for both athletic and casual wear."
+  },
+  {
+    "id": 2,
+    "productName": "Giannis Freak",
+    "category": "Shoes",
+    "image": "/assets/giannisfreak.png",
+    "discountPercent": 15,
+    "price": 200.00,
+    "discountedPrice": 170.00,
+    "rating": 4.2,
+    "description": "Inspired by Giannis Antetokounmpo, the Giannis Freak shoes offer high performance with innovative cushioning and support. Perfect for basketball enthusiasts."
+  },
+  {
+    "id": 3,
+    "productName": "Nike P-6000",
+    "category": "Shoes",
+    "image": "/assets/nike-p600.png",
+    "discountPercent": 10,
+    "price": 50.00,
+    "discountedPrice": 45.00,
+    "rating": 4.7,
+    "description": "The Nike P-6000 combines classic style with modern comfort. Its lightweight design and breathable material make it a great choice for everyday wear."
+  },
+  {
+    "id": 4,
+    "productName": "Nike Sportwear",
+    "category": "Clothing",
+    "image": "/assets/nike-sportswear.png",
+    "discountPercent": 5,
+    "price": 30.00,
+    "discountedPrice": 28.50,
+    "rating": 4.0,
+    "description": "Nike Sportwear is crafted for optimal comfort and style. Made with soft, high-quality fabric, it's perfect for workouts or casual outings."
+  },
+  {
+    "id": 5,
+    "productName": "Gaming Console",
+    "category": "Electronics",
+    "image": "/assets/console.webp",
+    "discountPercent": 5,
+    "price": 30.00,
+    "discountedPrice": 28.50,
+    "rating": 4.0,
+    "description": "This gaming console offers an immersive gaming experience with high-definition graphics and a wide selection of games. A great addition to any gamer's setup."
+  },
+  {
+    "id": 6,
+    "productName": "Nike V2K",
+    "category": "Shoes",
+    "image": "/assets/nike-v2k.png",
+    "discountPercent": 5,
+    "price": 30.00,
+    "discountedPrice": 28.50,
+    "rating": 4.0,
+    "description": "The Nike V2K is designed for comfort and style. With its modern look and comfortable fit, it’s perfect for everyday wear and casual activities."
+  }
+]

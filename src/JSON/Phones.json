@@ -1,0 +1,277 @@
+{
+  "iPhones": [
+    {
+      "model": "iPhone 15",
+      "releaseYear": 2023,
+      "storageOptions": ["128GB", "256GB", "512GB", "1TB"],
+      "price": "34,320",
+      "colorOptions": ["Black", "White", "Blue", "Yellow", "Purple"],
+      "screenSize": "6.1 inch",
+      "camera": {
+        "rear": {
+          "main": "48MP",
+          "ultraWide": "12MP",
+          "telephoto": "12MP"
+        },
+        "front": "12MP"
+      },
+      "chip": "A17 Bionic",
+      "features": ["5G", "Face ID", "Ceramic Shield", "Dynamic Island"],
+      "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/iphone-15-pink-smartphone-camera-vnxB1W1-600.jpg"
+    },
+    {
+      "model": "iPhone 15 Pro",
+      "releaseYear": 2023,
+      "storageOptions": ["128GB", "256GB", "512GB", "1TB"],
+      "price": "47,520",
+      "colorOptions": ["Titanium Black", "Titanium White", "Titanium Blue", "Titanium Natural"],
+      "screenSize": "6.1 inch",
+      "camera": {
+        "rear": {
+          "main": "48MP",
+          "ultraWide": "12MP",
+          "telephoto": "12MP"
+        },
+        "front": "12MP"
+      },
+      "chip": "A17 Pro",
+      "features": ["5G", "Face ID", "ProMotion Technology", "Ceramic Shield", "Dynamic Island"],
+      "image": "https://atlas-content-cdn.pixelsquid.com/assets_v2/324/3240250251566651319/jpeg-600/G03.jpg?modifiedAt=1"
+    },
+    {
+      "model": "iPhone 14",
+      "releaseYear": 2022,
+      "price": "60,720",
+      "storageOptions": ["128GB", "256GB", "512GB"],
+      "colorOptions": ["Black", "White", "Red", "Blue", "Purple"],
+      "screenSize": "6.1 inch",
+      "camera": {
+        "rear": {
+          "main": "12MP",
+          "ultraWide": "12MP"
+        },
+        "front": "12MP"
+      },
+      "chip": "A15 Bionic",
+      "features": ["5G", "Face ID", "Ceramic Shield", "Dynamic Island"],
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr7Zj3zE2mdqlRJRc6YJhHn8eWmD4LLmYWA&s"
+    },
+    {
+      "model": "iPhone 14 Pro",
+      "releaseYear": 2022,
+      "price": "73,920",
+      "storageOptions": ["128GB", "256GB", "512GB", "1TB"],
+      "colorOptions": ["Deep Purple", "Gold", "Silver", "Space Black"],
+      "screenSize": "6.1 inch",
+      "camera": {
+        "rear": {
+          "main": "48MP",
+          "ultraWide": "12MP",
+          "telephoto": "12MP"
+        },
+        "front": "12MP"
+      },
+      "chip": "A16 Bionic",
+      "features": ["5G", "Face ID", "ProMotion Technology", "Ceramic Shield", "Dynamic Island"],
+      "image": "https://atlas-content-cdn.pixelsquid.com/assets_v2/280/2806009922838336640/jpeg-600/G03.jpg?modifiedAt=1"
+    },
+    {
+      "model": "iPhone 13",
+      "releaseYear": 2021,
+      "price": "87,120",
+      "storageOptions": ["128GB", "256GB", "512GB"],
+      "colorOptions": ["Pink", "Blue", "Midnight", "Starlight", "Red"],
+      "screenSize": "6.1 inch",
+      "camera": {
+        "rear": {
+          "main": "12MP",
+          "ultraWide": "12MP"
+        },
+        "front": "12MP"
+      },
+      "chip": "A15 Bionic",
+      "features": ["5G", "Face ID", "Ceramic Shield"],
+      "image": "https://atlas-content-cdn.pixelsquid.com/assets_v2/280/2806009922838336640/jpeg-600/G03.jpg?modifiedAt=1"
+    },
+    {
+      "model": "iPhone 13 Pro",
+      "releaseYear": 2021,
+      "price": "95,040",
+      "storageOptions": ["128GB", "256GB", "512GB", "1TB"],
+      "colorOptions": ["Graphite", "Gold", "Silver", "Sierra Blue"],
+      "screenSize": "6.1 inch",
+      "camera": {
+        "rear": {
+          "main": "12MP",
+          "ultraWide": "12MP",
+          "telephoto": "12MP"
+        },
+        "front": "12MP"
+      },
+      "chip": "A15 Bionic",
+      "features": ["5G", "Face ID", "ProMotion Technology", "Ceramic Shield"],
+      "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/iphone-13-pro-smartphone-AvOqJ6D-600.jpg"
+    },
+    {
+      "model": "iPhone 12",
+      "releaseYear": 2020,
+      "price": "64,680",
+      "storageOptions": ["64GB", "128GB", "256GB"],
+      "colorOptions": ["Black", "White", "Red", "Green", "Blue", "Purple"],
+      "screenSize": "6.1 inch",
+      "camera": {
+        "rear": {
+          "main": "12MP",
+          "ultraWide": "12MP"
+        },
+        "front": "12MP"
+      },
+      "chip": "A14 Bionic",
+      "features": ["5G", "Face ID", "Ceramic Shield"],
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_tlXmMy4ATB7lQl0jIScxVYF07CDEagOaA&s"
+    },
+    {
+      "model": "iPhone 12 Pro",
+      "releaseYear": 2020,
+      "price": "102,960",
+      "storageOptions": ["128GB", "256GB", "512GB"],
+      "colorOptions": ["Graphite", "Silver", "Gold", "Pacific Blue"],
+      "screenSize": "6.1 inch",
+      "camera": {
+        "rear": {
+          "main": "12MP",
+          "ultraWide": "12MP",
+          "telephoto": "12MP"
+        },
+        "front": "12MP"
+      },
+      "chip": "A14 Bionic",
+      "features": ["5G", "Face ID", "Ceramic Shield"],
+      "image": "https://atlas-content-cdn.pixelsquid.com/assets_v2/280/2806009922838336640/jpeg-600/G03.jpg?modifiedAt=1"
+    },
+    {
+      "model": "iPhone SE (3rd generation)",
+      "releaseYear": 2022,
+      "price": "55,440",
+      "storageOptions": ["64GB", "128GB", "256GB"],
+      "colorOptions": ["Midnight", "Starlight", "Red"],
+      "screenSize": "4.7 inch",
+      "camera": {
+        "rear": {
+          "main": "12MP"
+        },
+        "front": "7MP"
+      },
+      "chip": "A15 Bionic",
+      "features": ["5G", "Touch ID"],
+      "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/iphone-se-2020-black-smartphone-8dEADvA-600.jpg"
+    },
+    {
+      "model": "iPhone SE (2nd generation)",
+      "releaseYear": 2020,
+      "price": "66,000",
+      "storageOptions": ["64GB", "128GB", "256GB"],
+      "colorOptions": ["Black", "White", "Red"],
+      "screenSize": "4.7 inch",
+      "camera": {
+        "rear": {
+          "main": "12MP"
+        },
+        "front": "7MP"
+      },
+      "chip": "A13 Bionic",
+      "features": ["4G LTE", "Touch ID"],
+      "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/iphone-se-2020-black-smartphone-8dEADvA-600.jpg"
+    }
+  ],
+  "Computers": [
+    {
+      "model": "MacBook Air (M2, 2023)",
+      "releaseYear": 2023,
+      "price": "99,000",
+      "storageOptions": ["256GB", "512GB", "1TB"],
+      "colorOptions": ["Space Gray", "Starlight", "Midnight", "Silver"],
+      "screenSize": "13.6 inch",
+      "chip": "M2",
+      "features": ["Retina Display", "Touch ID", "Thunderbolt 3"],
+      "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/midnight-macbook-air-m2-2022-64RewZ3-600.jpg"
+    },
+    {
+      "model": "Dell XPS 13",
+      "releaseYear": 2023,
+      "price": "95,000",
+      "storageOptions": ["256GB", "512GB", "1TB"],
+      "colorOptions": ["Platinum Silver", "Frost White"],
+      "screenSize": "13.4 inch",
+      "chip": "Intel Core i7",
+      "features": ["InfinityEdge Display", "Fingerprint Reader", "Thunderbolt 4"],
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5tOnCRzqsw1hsQq-7pS_TCFbSX67tv2GF7g&s"
+    },
+    {
+      "model": "HP Spectre x360 14",
+      "releaseYear": 2023,
+      "price": "1,20,000",
+      "storageOptions": ["512GB", "1TB"],
+      "colorOptions": ["Nightfall Black", "Pale Gold"],
+      "screenSize": "13.5 inch",
+      "chip": "Intel Core i7",
+      "features": ["OLED Display", "Convertible Design", "Windows Hello"],
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqrvYObpHo-sDsU1CFZNAS1FR9OT_tLTfgg&s"
+    }
+  ],
+  "Watches": [
+    {
+      "model": "Apple Watch Series 8",
+      "releaseYear": 2023,
+      "price": "45,000",
+      "colorOptions": ["Midnight", "Starlight", "PRODUCT(RED)", "Silver"],
+      "features": ["Always-On Display", "ECG", "Blood Oxygen Monitoring"],
+      "image": "https://dummyimage.com/600x400/666/fff&text=Apple+Watch+Series+8"
+    },
+    {
+      "model": "Samsung Galaxy Watch 6",
+      "releaseYear": 2023,
+      "price": "40,000",
+      "colorOptions": ["Black", "Silver", "Gold"],
+      "features": ["Super AMOLED Display", "Heart Rate Monitoring", "Sleep Tracking"],
+      "image": "https://dummyimage.com/600x400/777/fff&text=Samsung+Galaxy+Watch+6"
+    },
+    {
+      "model": "Garmin Forerunner 945",
+      "releaseYear": 2023,
+      "price": "55,000",
+      "colorOptions": ["Black", "Slate", "Berry"],
+      "features": ["GPS Tracking", "VO2 Max", "Advanced Sleep Tracking"],
+      "image": "https://dummyimage.com/600x400/888/fff&text=Garmin+Forerunner+945"
+    }
+  ],
+  "Shoes": [
+    {
+      "model": "Nike Air Max 270",
+      "releaseYear": 2023,
+      "price": "15,000",
+      "colorOptions": ["Black", "White", "Red", "Blue"],
+      "sizes": ["6", "7", "8", "9", "10"],
+      "features": ["Air Cushioning", "Breathable Mesh"],
+      "image": "https://dummyimage.com/600x400/999/fff&text=Nike+Air+Max+270"
+    },
+    {
+      "model": "Adidas Ultraboost 22",
+      "releaseYear": 2023,
+      "price": "18,000",
+      "colorOptions": ["Black", "White", "Grey", "Blue"],
+      "sizes": ["6", "7", "8", "9", "10"],
+      "features": ["Boost Cushioning", "Primeknit Upper"],
+      "image": "https://dummyimage.com/600x400/aaa/fff&text=Adidas+Ultraboost+22"
+    },
+    {
+      "model": "Puma RS-X3",
+      "releaseYear": 2023,
+      "price": "14,000",
+      "colorOptions": ["White", "Black", "Green", "Purple"],
+      "sizes": ["6", "7", "8", "9", "10"],
+      "features": ["RS Cushioning", "Retro Design"],
+      "image": "https://dummyimage.com/600x400/bbb/fff&text=Puma+RS-X3"
+    }
+  ]
+}
