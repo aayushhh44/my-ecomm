@@ -3,12 +3,14 @@ import React from "react";
 const NewArrival = () => {
   return (
     <div className="sm:p-16 w-full">
-      <div className="flex gap-2 items-center mb-2">
-        <div className="bg-[#DB4444] rounded-sm h-8 w-4"></div>
-        <p className="font-poppins">Featured</p>
-      </div>
+      <div className="p-8">
+        <div className="flex gap-2 items-center mb-2">
+          <div className="bg-[#DB4444] rounded-sm h-8 w-4"></div>
+          <p className="font-poppins">Featured</p>
+        </div>
 
-      <h1 className="text-3xl">New Arrival</h1>
+        <h1 className="text-3xl">New Arrival</h1>
+      </div>
       <div className="flex p-8 flex-col sm:grid grid-cols-2 gap-3">
         <div className="bg-[#0d0d0d] relative flex justify-center p-6">
           <img src="/assets/image.png" />
