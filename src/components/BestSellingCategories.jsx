@@ -31,7 +31,7 @@ const BestSellingCategories = () => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {
@@ -81,7 +81,7 @@ const BestSellingCategories = () => {
       <Slider ref={sliderRef} {...settings}>
         {Products.map((product) => (
           <div className="flex" key={product.id}>
-            <div className="flex flex-col gap-4 items-center bg-[#f6f6f6] w-60 relative ">
+            <div className="flex flex-col gap-4 items-center bg-[#f6f6f6] sm:w-60 relative ">
               <IoEye
                 className="absolute border cursor-pointer right-2 top-2"
                 onClick={() => handleEyeClick(product)}
