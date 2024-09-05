@@ -13,7 +13,7 @@ import Products from '../JSON/products.json';
 const Navbar = () => {
   const [isSearchActive, setIsSearchActive] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const { cartItems } = useContext(CartContext);
+  const { cartItems, favItems } = useContext(CartContext);
   const navigate = useNavigate();
 
   const handleSearchClick = () => {
@@ -92,14 +92,17 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link to="/wish-list" className="cursor-pointer">
+          <Link to="/wish-list" className="cursor-pointer relative">
             <IoMdHeartEmpty size={25} />
+            <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 ">
+              {favItems?.length}
+            </div>
           </Link>
 
           <Link to="/cart" className="cursor-pointer relative">
             <span className="sr-only">Notifications</span>
             <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 ">
-              {cartItems.length}
+              {cartItems?.length}
             </div>
 
             <IoCartOutline size={25} />

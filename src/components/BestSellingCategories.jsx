@@ -5,9 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
+import { motion } from "framer-motion";
 
 const BestSellingCategories = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const sliderRef = useRef(null);
 
   const handleEyeClick = (product) => {
     setSelectedProduct(product);
@@ -17,9 +20,16 @@ const BestSellingCategories = () => {
     setSelectedProduct(null);
   };
 
+  const gotoRight = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const gotoLeft = () => {
+    sliderRef.current.slickPrev();
+  };
+
   const settings = {
     infinite: true,
-    dots: true,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -49,13 +59,26 @@ const BestSellingCategories = () => {
       <div className="flex justify-between mb-8">
         <h2 className="text-3xl">Best Selling Products</h2>
         <div className="flex gap-2">
-          <GoChevronLeft fontSize={26} className="cursor-pointer" />
-          <GoChevronRight fontSize={26} className="cursor-pointer" />
-
+          <motion.div
+            onClick={gotoLeft}
+            className="cursor-pointer"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <GoChevronLeft size={30} />
+          </motion.div>
+          <motion.div
+            onClick={gotoRight}
+            className="cursor-pointer"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <GoChevronRight size={30} />
+          </motion.div>
         </div>
       </div>
 
-      <Slider {...settings}>
+      <Slider ref={sliderRef} {...settings}>
         {Products.map((product) => (
           <div className="flex" key={product.id}>
             <div className="flex flex-col gap-4 items-center bg-[#f6f6f6] w-60 relative ">

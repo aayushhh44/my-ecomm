@@ -36,7 +36,6 @@ const ProductPage = () => {
         <img src={product?.image} alt="Product Image" />
         
       </div>
-
       <div className="w-1/2 flex flex-col gap-4 font-poppins">
         <h1 className="text-3xl">{product?.productName}</h1>
         <h2 className="text-green-600">In stock</h2>

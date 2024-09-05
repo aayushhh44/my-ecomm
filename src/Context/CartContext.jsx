@@ -46,6 +46,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const updateQuantity = (itemId, action) => {
+    console.log('updateQuantity called with:', itemId, action);
     setCartItems((prevItems) =>
       prevItems.map((item) =>
         item.id === itemId
@@ -62,6 +63,7 @@ export const CartProvider = ({ children }) => {
       )
     );
   };
+  
 
   //   const totalPrice = ()
 

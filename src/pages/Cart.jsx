@@ -3,25 +3,25 @@ import { CartContext } from "../Context/CartContext";
 import { Link, useNavigate } from "react-router-dom";
 
 const Cart = () => {
-
-
-  const { cartItems, removeFromCart, updateQuantity, addToFavorite, favItems } = useContext(CartContext);
-  console.log(removeFromCart)
-  console.log('Ranmati', favItems)
-  const navigate = useNavigate();
+  const { cartItems, removeFromCart, updateQuantity, addToFavorite, favItems } =
+    useContext(CartContext);
+  // console.log(removeFromCart);
+  // console.log("Ranmati", favItems);
+  // const navigate = useNavigate();
 
   const increment = (itemId) => {
-    updateQuantity(itemId, 'increment')
-    
+    updateQuantity(itemId, "increment");
   };
-
 
   const decrement = (itemId) => {
-    updateQuantity(itemId, 'decrement')
+    updateQuantity(itemId, "decrement");
   };
 
-  const totalPrice = cartItems.reduce((acc, item) => acc + item.price * item.quantity , 0);
-  const finalPrice = totalPrice - 299 + 99 + 799
+  const totalPrice = cartItems.reduce(
+    (acc, item) => acc + item.price * item.quantity,
+    0
+  );
+  const finalPrice = totalPrice - 299 + 99 + 799;
   // console.log(totalPrice)
 
   console.log("your dad", cartItems);
@@ -52,36 +52,33 @@ const Cart = () => {
           <div class="mt-6 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
             <div class="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl">
               <div class="space-y-6">
-                {cartItems != 0 ? (
+                {cartItems.length !== 0 ? (
                   <div>
                     {cartItems.map((item) => (
                       <div
                         key={item?.id}
-                        class="rounded-lg border p-4 shadow-md md:p-6"
+                        className="rounded-lg border p-4 shadow-md md:p-6"
                       >
-                        <div class="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
-                          <a href="#" class="shrink-0 md:order-1">
-                            <img
-                              class="hidden h-20 w-20 dark:block"
-                              src={item?.image}
-                              alt="imac image"
-                            />
-                          </a>
-
-                          <label for="counter-input" class="sr-only">
+                        <div className="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
+                          <img
+                            className="hidden h-20 w-20 dark:block"
+                            src={item?.image}
+                            alt="product image"
+                          />
+                          <label htmlFor="counter-input" className="sr-only">
                             Choose quantity:
                           </label>
-                          <div class="flex items-center justify-between md:order-3 md:justify-end">
-                            <div class="flex items-center">
+                          <div className="flex items-center justify-between md:order-3 md:justify-end">
+                            <div className="flex items-center">
                               <button
                                 type="button"
                                 onClick={() => decrement(item?.id)}
                                 id="decrement-button"
                                 data-input-counter-decrement="counter-input"
-                                class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300  hover:bg-red-700 focus:outline-none bg-[#da4443]"
+                                className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 hover:bg-red-700 focus:outline-none bg-[#da4443]"
                               >
                                 <svg
-                                  class="h-2.5 text-white w-2.5"
+                                  className="h-2.5 text-white w-2.5"
                                   aria-hidden="true"
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -89,9 +86,9 @@ const Cart = () => {
                                 >
                                   <path
                                     stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
                                     d="M1 1h16"
                                   />
                                 </svg>
@@ -100,20 +97,20 @@ const Cart = () => {
                                 type="text"
                                 id="counter-input"
                                 data-input-counter
-                                class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0 "
+                                className="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0"
                                 placeholder=""
                                 value={item?.quantity}
                                 required
                               />
                               <button
-                                onClick={() => increment(item?.id)}
+                                onClick={(e) =>{ e.preventDefault(); increment(item?.id)}}
                                 type="button"
                                 id="increment-button"
                                 data-input-counter-increment="counter-input"
-                                class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300  hover:bg-red-700 focus:outline-none bg-[#da4443]"
+                                className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 hover:bg-red-700 focus:outline-none bg-[#da4443]"
                               >
                                 <svg
-                                  class="h-2.5 w-2.5 text-white"
+                                  className="h-2.5 w-2.5 text-white"
                                   aria-hidden="true"
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -121,35 +118,32 @@ const Cart = () => {
                                 >
                                   <path
                                     stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
                                     d="M9 1v16M1 9h16"
                                   />
                                 </svg>
                               </button>
                             </div>
-                            <div class="text-end md:order-4 md:w-32">
-                              <p class="text-base font-bold ">NPR {item?.price}</p>
+                            <div className="text-end md:order-4 md:w-32">
+                              <p className="text-base font-bold">
+                                NPR {item?.price}
+                              </p>
                             </div>
                           </div>
-
-                          <div class="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
-                            <a
-                              href="#"
-                              class="text-base font-medium hover:underline"
-                            >
+                          <div className="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
+                            <a className="text-base font-medium hover:underline">
                               {item?.productName}
                             </a>
-
-                            <div class="flex items-center gap-4">
+                            <div className="flex items-center gap-4">
                               <button
-                              onClick={() => addToFavorite(item)}
+                                onClick={() => addToFavorite(item)}
                                 type="button"
-                                class="inline-flex items-center text-sm font-medium  hover:underline dark:text-gray-400"
+                                className="inline-flex items-center text-sm font-medium hover:underline dark:text-gray-400"
                               >
                                 <svg
-                                  class="me-1.5 h-5 w-5"
+                                  className="me-1.5 h-5 w-5"
                                   aria-hidden="true"
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -159,22 +153,24 @@ const Cart = () => {
                                 >
                                   <path
                                     stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
                                     d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
                                   />
                                 </svg>
                                 Add to Favorites
                               </button>
-
                               <button
-                                onClick={() => removeFromCart(item?.id)}
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  removeFromCart(item?.id);
+                                }}
                                 type="button"
-                                class="inline-flex items-center text-sm font-medium text-red-600 hover:underline dark:text-red-500"
+                                className="inline-flex items-center text-sm font-medium text-red-600 hover:underline dark:text-red-500"
                               >
                                 <svg
-                                  class="me-1.5 h-5 w-5"
+                                  className="me-1.5 h-5 w-5"
                                   aria-hidden="true"
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -184,9 +180,9 @@ const Cart = () => {
                                 >
                                   <path
                                     stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
                                     d="M6 18 17.94 6M18 18 6.06 6"
                                   />
                                 </svg>
@@ -649,14 +645,18 @@ const Cart = () => {
                       <dt class="text-base font-normal text-gray-500 dark:text-gray-400">
                         Store Pickup
                       </dt>
-                      <dd class="text-base font-medium text-gray-900 ">NPR 99</dd>
+                      <dd class="text-base font-medium text-gray-900 ">
+                        NPR 99
+                      </dd>
                     </dl>
 
                     <dl class="flex items-center justify-between gap-4">
                       <dt class="text-base font-normal text-gray-500 dark:text-gray-400">
                         Tax
                       </dt>
-                      <dd class="text-base font-medium text-gray-900 ">NPR 799</dd>
+                      <dd class="text-base font-medium text-gray-900 ">
+                        NPR 799
+                      </dd>
                     </dl>
                   </div>
 
@@ -681,7 +681,7 @@ const Cart = () => {
                     or{" "}
                   </span>
                   <Link
-                    onClick={navigate('/')}
+                    // onClick={navigate("/")}
                     title=""
                     class="inline-flex items-center gap-2 text-sm font-medium text-primary-700 underline hover:no-underline dark:text-primary-500"
                   >
