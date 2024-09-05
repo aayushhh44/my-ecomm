@@ -38,8 +38,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex py-6 sm:pt-8 sm:px-20 justify-between items-center">
-        <h3 className="sm:text-2xl font-poppins cursor-pointer">Aayush Store</h3>
+      <div className="flex px-4 py-6 sm:pt-8 sm:px-20 justify-between items-center">
+        <Link to='/' className="sm:text-2xl font-poppins cursor-pointer">Aayufi Store</Link>
 
         <div className="flex gap-x-10 items-center">
           <Link to="/" className="font-poppins hidden sm:block cursor-pointer">
@@ -54,8 +54,8 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex gap-4 items-center">
-          <div className="relative">
+        <div className="flex gap-4 items-center p-4">
+          <div className="hidden md:relative md:block">
             <motion.input
               className="pl-4 placeholder:text-sm focus:outline-none bg-[#f5f5f5] font-poppins pr-4 py-1 border border-red-600"
               type="search"

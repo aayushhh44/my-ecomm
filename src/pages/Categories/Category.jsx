@@ -21,6 +21,7 @@ const Category = () => {
   // console.log(Variants.watches)
 
   const Categ = Variants[name] || []
+
   console.log(Categ)
    return (
     <div className="p-4">
@@ -28,7 +29,7 @@ const Category = () => {
 
       <h1 className="font-poppins"> Home{pathname}</h1>
       <h2 className="font-poppins text-2xl">{name} for you</h2>
-      <div className="grid grid-cols-4 gap-4 justify-center items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-center items-center">
         {/* {name === "phones" ? (
           Phoness?.iPhones?.map((iphn) => (
             <div className="flex flex-col cursor-pointer justify-center items-center shadow-md">

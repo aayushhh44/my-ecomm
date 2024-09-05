@@ -38,8 +38,8 @@ const Countdown = () => {
         <p className="font-poppins">Today's</p>
       </div>
 
-      <div className="flex items-center gap-8 sm:gap-16">
-        <h1 className="md:text-3xl sm:text-xl font-poppins text-nowrap">
+      <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-16">
+        <h1 className="text-2xl md:text-3xl sm:text-xl font-poppins text-nowrap">
           Flash Sales
         </h1>
 
