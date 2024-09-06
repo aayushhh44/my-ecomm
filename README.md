@@ -103,7 +103,7 @@ ecom/
 ## Live Demo
 
 You can view the live version of the application hosted on Netlify:
-[Live Demo](main--aayush-ecommercee.netlify.app/) 
+[Live Demo](https://main--aayush-ecommercee.netlify.app/) 
 
 ## Contributing
 
