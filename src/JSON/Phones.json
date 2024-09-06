@@ -1,6 +1,7 @@
 {
   "iPhones": [
     {
+      "id": "iphone_001",
       "model": "iPhone 15",
       "releaseYear": 2023,
       "storageOptions": ["128GB", "256GB", "512GB", "1TB"],
@@ -20,6 +21,7 @@
       "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/iphone-15-pink-smartphone-camera-vnxB1W1-600.jpg"
     },
     {
+      "id": "iphone_002",
       "model": "iPhone 15 Pro",
       "releaseYear": 2023,
       "storageOptions": ["128GB", "256GB", "512GB", "1TB"],
@@ -39,6 +41,7 @@
       "image": "https://atlas-content-cdn.pixelsquid.com/assets_v2/324/3240250251566651319/jpeg-600/G03.jpg?modifiedAt=1"
     },
     {
+      "id": "iphone_003",
       "model": "iPhone 14",
       "releaseYear": 2022,
       "price": "60,720",
@@ -57,6 +60,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr7Zj3zE2mdqlRJRc6YJhHn8eWmD4LLmYWA&s"
     },
     {
+      "id": "iphone_004",
       "model": "iPhone 14 Pro",
       "releaseYear": 2022,
       "price": "73,920",
@@ -76,6 +80,7 @@
       "image": "https://atlas-content-cdn.pixelsquid.com/assets_v2/280/2806009922838336640/jpeg-600/G03.jpg?modifiedAt=1"
     },
     {
+      "id": "iphone_005",
       "model": "iPhone 13",
       "releaseYear": 2021,
       "price": "87,120",
@@ -94,6 +99,7 @@
       "image": "https://atlas-content-cdn.pixelsquid.com/assets_v2/280/2806009922838336640/jpeg-600/G03.jpg?modifiedAt=1"
     },
     {
+      "id": "iphone_006",
       "model": "iPhone 13 Pro",
       "releaseYear": 2021,
       "price": "95,040",
@@ -113,6 +119,7 @@
       "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/iphone-13-pro-smartphone-AvOqJ6D-600.jpg"
     },
     {
+      "id": "iphone_007",
       "model": "iPhone 12",
       "releaseYear": 2020,
       "price": "64,680",
@@ -131,6 +138,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_tlXmMy4ATB7lQl0jIScxVYF07CDEagOaA&s"
     },
     {
+      "id": "iphone_008",
       "model": "iPhone 12 Pro",
       "releaseYear": 2020,
       "price": "102,960",
@@ -150,6 +158,7 @@
       "image": "https://atlas-content-cdn.pixelsquid.com/assets_v2/280/2806009922838336640/jpeg-600/G03.jpg?modifiedAt=1"
     },
     {
+      "id": "iphone_009",
       "model": "iPhone SE (3rd generation)",
       "releaseYear": 2022,
       "price": "55,440",
@@ -167,6 +176,7 @@
       "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/iphone-se-2020-black-smartphone-8dEADvA-600.jpg"
     },
     {
+      "id": "iphone_010",
       "model": "iPhone SE (2nd generation)",
       "releaseYear": 2020,
       "price": "66,000",
@@ -186,6 +196,7 @@
   ],
   "Computers": [
     {
+      "id": "mac_001",
       "model": "MacBook Air (M2, 2023)",
       "releaseYear": 2023,
       "price": "99,000",
@@ -197,6 +208,7 @@
       "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/midnight-macbook-air-m2-2022-64RewZ3-600.jpg"
     },
     {
+      "id": "dell_002",
       "model": "Dell XPS 13",
       "releaseYear": 2023,
       "price": "95,000",
@@ -208,6 +220,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5tOnCRzqsw1hsQq-7pS_TCFbSX67tv2GF7g&s"
     },
     {
+      "id": "hp_003",
       "model": "HP Spectre x360 14",
       "releaseYear": 2023,
       "price": "1,20,000",
@@ -221,32 +234,36 @@
   ],
   "Watches": [
     {
-      "model": "Apple Watch Series 8",
+      "id": "watch_001",
+      "model": "Apple Watch Series 9",
       "releaseYear": 2023,
       "price": "45,000",
       "colorOptions": ["Midnight", "Starlight", "PRODUCT(RED)", "Silver"],
       "features": ["Always-On Display", "ECG", "Blood Oxygen Monitoring"],
-      "image": "https://dummyimage.com/600x400/666/fff&text=Apple+Watch+Series+8"
+      "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/apple-watch-series-4-gold-smart-vnZ55P0-600.jpg"
     },
     {
+      "id": "watch_002",
       "model": "Samsung Galaxy Watch 6",
       "releaseYear": 2023,
       "price": "40,000",
       "colorOptions": ["Black", "Silver", "Gold"],
       "features": ["Super AMOLED Display", "Heart Rate Monitoring", "Sleep Tracking"],
-      "image": "https://dummyimage.com/600x400/777/fff&text=Samsung+Galaxy+Watch+6"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1V-YEHZD0Z8DdLoYMURznEmifeV8r-OM7RQ&s"
     },
     {
+      "id": "watch_003",
       "model": "Garmin Forerunner 945",
       "releaseYear": 2023,
       "price": "55,000",
       "colorOptions": ["Black", "Slate", "Berry"],
       "features": ["GPS Tracking", "VO2 Max", "Advanced Sleep Tracking"],
-      "image": "https://dummyimage.com/600x400/888/fff&text=Garmin+Forerunner+945"
+      "image": "https://www.garmin.com.sg/m/sg/g/products/Forerunner945-black-image-01.png"
     }
   ],
   "Shoes": [
     {
+      "id": "shoes_001",
       "model": "Nike Air Max 270",
       "releaseYear": 2023,
       "price": "15,000",
@@ -256,6 +273,7 @@
       "image": "https://dummyimage.com/600x400/999/fff&text=Nike+Air+Max+270"
     },
     {
+      "id": "shoes_002",
       "model": "Adidas Ultraboost 22",
       "releaseYear": 2023,
       "price": "18,000",
@@ -265,6 +283,7 @@
       "image": "https://dummyimage.com/600x400/aaa/fff&text=Adidas+Ultraboost+22"
     },
     {
+      "id": "shoes_003",
       "model": "Puma RS-X3",
       "releaseYear": 2023,
       "price": "14,000",

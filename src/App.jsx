@@ -17,28 +17,22 @@ import Dashboard from "./admin/Dashboard";
 import Category from "./pages/Categories/Category";
 
 const App = () => {
- 
-
   return (
-
-      
-        <Routes key="routes">
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/about-us" element={<About />} />
-            <Route path="/wish-list" element={<Wishlist />} />
-            <Route path="/practice" element={<Practice />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/framer" element={<SmoothScrollHero />} />
-            <Route path="/product" element={<TodaysSalePage />} />
-            <Route path="/product-desc/:id" element={<ProductDesc />}/>
-            <Route path="/dashboard" element={<Dashboard/>} />
-            <Route path="/category/:name" element={<Category/>} />
-          </Route>
-        </Routes>
-      
-
+    <Routes key="routes">
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="/wish-list" element={<Wishlist />} />
+        <Route path="/practice" element={<Practice />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/framer" element={<SmoothScrollHero />} />
+        <Route path="/product" element={<TodaysSalePage />} />
+        <Route path="/product-desc/:id" element={<ProductDesc />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/category/:name" element={<Category />} />
+      </Route>
+    </Routes>
   );
 };
 

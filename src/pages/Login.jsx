@@ -3,9 +3,9 @@ import React from "react";
 const Login = () => {
   return (
     <div className="flex items-center mt-4">
-      <div className="w-1/2">
+      <div className="w-1/2 h-full">
         <img
-          className="h-[600px] w-[600px]"
+          className="h-full w-[600px]"
           src="/assets/login.jpg"
           alt="Login Image" 
         />

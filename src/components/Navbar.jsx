@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex px-4 py-6 sm:pt-8 sm:px-20 justify-between items-center">
-        <Link to='/' className="sm:text-2xl font-poppins cursor-pointer">Aayufi Store</Link>
+        <Link to='/' className="sm:text-2xl font-poppins cursor-pointer">Aayush Store</Link>
 
         <div className="flex gap-x-10 items-center">
           <Link to="/" className="font-poppins hidden sm:block cursor-pointer">
@@ -79,10 +79,11 @@ const Navbar = () => {
                   filteredProducts.map((product) => (
                     <div
                       key={product.id}
-                      className="p-2  text-black cursor-pointer"
+                      className="p-2 flex items-center justify-between text-black cursor-pointer"
                       onClick={() => handleProductClick(product)}
                     >
-                      {product.productName}
+                      <div>{product.productName}</div>
+                      <img className="w-16" src={product?.image} alt="Image" />
                     </div>
                   ))
                 ) : (

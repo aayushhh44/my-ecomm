@@ -11,8 +11,11 @@ const Layout = () => {
     <div>
       {!hideHeader && <TopBar/>}
       {!hideHeader && <Navbar/>}
+      {/* {!hideHeader && <Footer />} */}
         <Outlet/>
-        <Footer />
+        {/* <Footer /> */}
+        {!hideHeader && <Footer />} 
+
       
     </div>
   )
