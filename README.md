@@ -9,6 +9,7 @@ Aayush Store is an e-commerce frontend web application built using React, Vite, 
 - [Getting Started](#getting-started)
 - [Available Scripts](#available-scripts)
 - [Folder Structure](#folder-structure)
+- [Live Demo](#live-demo)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -55,4 +56,62 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/aayushhh44/my-ecomm.git
+   git clone https://github.com/yourusername/aayush-store.git
+Navigate to the project directory:
+
+bash
+Copy code
+cd aayush-store
+Install the dependencies:
+
+bash
+Copy code
+npm install
+Start the development server:
+
+bash
+Copy code
+npm run dev
+Open your browser and navigate to:
+
+arduino
+Copy code
+http://localhost:3000
+Available Scripts
+In the project directory, you can run the following commands:
+
+npm run dev: Starts the development server with Vite.
+npm run build: Builds the app for production.
+npm run lint: Lints the project for code style issues.
+npm run preview: Previews the production build.
+Folder Structure
+The project directory is organized as follows:
+
+php
+Copy code
+ecom/
+├── public/         # Static files like index.html, images, etc.
+├── src/
+│   ├── assets/     # Static assets such as images and fonts
+│   ├── components/ # Reusable UI components
+│   ├── pages/      # Application pages (e.g., Home, Product details)
+│   ├── styles/     # Global styles and Tailwind configuration
+│   ├── App.jsx     # Main app entry point
+│   └── index.js    # React entry point
+├── package.json    # Project metadata and dependencies
+└── vite.config.js  # Vite configuration
+Live Demo
+You can view the live version of the application hosted on Netlify:
+
+Live Demo
+
+Contributing
+Contributions are welcome! Feel free to open a pull request or submit issues.
+
+License
+This project is licensed under the MIT License.
+
+arduino
+Copy code
+
+Replace `main--aayush-ecommercee.netlify.app/` with your actual Netlify URL. This section will make it easy for users to access the live demo of your project.
