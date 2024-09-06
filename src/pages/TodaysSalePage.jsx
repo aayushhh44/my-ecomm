@@ -18,7 +18,7 @@ const TodaysSalePage = () => {
         What are you shopping for today?
       </h1>
 
-      <h2 className="text-xl p-4">Shoes</h2>
+      <h2 className="text-xl p-4 underline">Shoes</h2>
 
       <AnimatePresence mode="wait">
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 justify-between">
@@ -63,7 +63,7 @@ const TodaysSalePage = () => {
         </div>
       </AnimatePresence>
 
-      <h2 className="text-xl p-4">Phones</h2>
+      <h2 className="text-xl underline p-4">Phones</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 justify-between">
         {AllProducts?.iPhones.map((phone) => (
@@ -143,7 +143,7 @@ const TodaysSalePage = () => {
         ))}
       </div>
 
-      <h2 className="text-xl p-4">Watches</h2>
+      <h2 className="text-xl underline p-4">Watches</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 justify-between">
         {AllProducts?.Watches.map((phone) => (
@@ -183,7 +183,7 @@ const TodaysSalePage = () => {
         ))}
       </div>
 
-      <h2 className="text-xl p-4">Shoes</h2>
+      <h2 className="text-xl underline p-4">Shoes</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 justify-between">
         {AllProducts?.Shoes.map((phone) => (
