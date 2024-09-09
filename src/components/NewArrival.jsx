@@ -27,7 +27,7 @@ const NewArrival = () => {
             <p className="text-white sm:w-64 text-xs sm:text-sm">
               Black and White version of the PS5 coming out on sale
             </p>
-            <p className="underline text-white">Shop Now</p>
+            <p className="underline cursor-pointer text-white">Shop Now</p>
           </div>
         </div>
 
@@ -41,7 +41,7 @@ const NewArrival = () => {
               <p className="text-white sm:w-64 text-xs sm:text-sm">
                 Featured woman collections that give you another vibe.
               </p>
-              <p className="underline text-white">Shop Now</p>
+              <p className="underline cursor-pointer text-white">Shop Now</p>
             </div>
           </div>
 
@@ -55,7 +55,7 @@ const NewArrival = () => {
               <p className="text-white sm:w-64 text-xs sm:text-sm">
                 Amazing wirespeakers are on sale
               </p>
-              <p className="underline text-white">Shop Now</p>
+              <p className="underline cursor-pointer text-white">Shop Now</p>
             </div>
           </div>
 
@@ -68,7 +68,7 @@ const NewArrival = () => {
               <p className="text-white sm:w-64 text-xs sm:text-sm">
                 Amazing perfume on sale
               </p>
-              <p className="underline text-white">Shop Now</p>
+              <p className="cursor-pointer underline text-white">Shop Now</p>
             </div>
           </div>
         </div>

@@ -277,7 +277,6 @@ const TodaysSalePage = () => {
       </div>
 
       <h2 className="text-xl p-4 underline">Computers</h2>
-
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 justify-center">
         {AllProducts?.Computers.map((phone) => (
           <div
@@ -304,7 +303,6 @@ const TodaysSalePage = () => {
                     state: Products,
                   })
                 }
-            
               >
                 Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport
               </h5>

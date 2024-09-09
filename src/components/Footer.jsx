@@ -35,8 +35,8 @@ const Footer = () => {
         <h2>Account</h2>
         <Link className="mt-4 text-sm">My Account</Link>
         <Link className="mt-4 text-sm">Login / Register</Link>
-        <Link className="mt-4 text-sm">Cart</Link>
-        <Link className="mt-4 text-sm">Wishlist</Link>
+        <Link to='/cart' className="mt-4 text-sm">Cart</Link>
+        <Link  to='/wish-list' className="mt-4 text-sm">Wishlist</Link>
         <Link className="mt-4 text-sm">Shop</Link>
       </div>
 
