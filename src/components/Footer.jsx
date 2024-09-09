@@ -51,12 +51,12 @@ const Footer = () => {
       <div className="w-full sm:w-1/5 flex flex-col gap-2">
         <h2>Download App</h2>
         <p className="mt-4 text-sm">Save $4 with App New User Only</p>
-        <div className="flex gap-2">
+        <div className="flex md:flex-col xl:flex-row gap-2">
           <img
             className="w-24"
             src="https://quickchart.io/qr?text=BarcodesInc&size=200"
           />
-          <div className="flex gap-2 flex-col">
+          <div className="flex  gap-2 flex-col">
             <p className="text-sm">Get it on google play</p>
             <p className="text-sm text-nowrap">Download on the App Store</p>
           </div>

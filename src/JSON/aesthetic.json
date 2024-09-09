@@ -1,0 +1,31 @@
+[
+    {
+        "id":"play_456",
+        "imgSrc":"/assets/image.png",
+        "title":"Play Station 5",
+        "description":" Black and White version of the PS5 coming out on sale",
+        "price":30000
+    },
+    {
+        "id":"women_456",
+        "imgSrc":"/assets/women.png",
+        "title":" Womenn's Collection",
+        "description":" Black and White version of the PS5 coming out on sale",
+        "price":30000
+    },
+    {
+        "id":"speaker_444",
+        "imgSrc":"/assets/speaker.png",
+        "title":"Speakers",
+        "description":"Amazing wirespeakers are on sale",
+        "price":8000
+    },
+    {
+        "id":"perfume_444",
+        "imgSrc":"/assets/women.png",
+        "title":"Perfume",
+        "description":"  Featured woman collections that give you another vibe.",
+        "price":15000
+    }
+
+]

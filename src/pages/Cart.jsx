@@ -195,7 +195,10 @@ const Cart = () => {
                     ))}
                   </div>
                 ) : (
-                  <div>Please add some products to the cart</div>
+                  <div className="flex flex-col items-center gap-2">
+                    <h2 className="text-3xl font-poppins">Your cart is <span className="text-red-600">Empty</span></h2>
+                    <p className="font-poppins text-sm text-justify">Looks like you've not added anything to your cart. Go ahead and add some items to your cart</p>
+                  </div>
                 )}
 
                 {/* <div class="rounded-lg border p-4 shadow-md md:p-6">
@@ -346,8 +349,8 @@ const Cart = () => {
                   People also bought
                 </h3>
                 <div class="mt-6 grid grid-cols-3 gap-4 sm:mt-8">
-                  <div class="space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                    <a href="#" class="overflow-hidden rounded">
+                  <div class="space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 shadow-sm border-gray-700">
+                    <div class="overflow-hidden rounded">
                       <img
                         class="mx-auto h-44 w-44 dark:hidden"
                         src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front.svg"
@@ -358,11 +361,11 @@ const Cart = () => {
                         src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg"
                         alt="imac image"
                       />
-                    </a>
+                    </div>
                     <div>
                       <a
                         href="#"
-                        class="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"
+                        class="text-lg font-semibold leading-tight text-gray-900 hover:underline "
                       >
                         iMac 27”
                       </a>
@@ -372,7 +375,7 @@ const Cart = () => {
                       </p>
                     </div>
                     <div>
-                      <p class="text-lg font-bold text-gray-900 dark:text-white">
+                      <p class="text-lg font-bold text-gray-900 ">
                         <span class="line-through"> $399,99 </span>
                       </p>
                       <p class="text-lg font-bold leading-tight text-red-600 dark:text-red-500">
@@ -383,7 +386,7 @@ const Cart = () => {
                       <button
                         data-tooltip-target="favourites-tooltip-1"
                         type="button"
-                        class="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white p-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+                        class="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white p-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
                       >
                         <svg
                           class="h-5 w-5"
@@ -404,14 +407,14 @@ const Cart = () => {
                       <div
                         id="favourites-tooltip-1"
                         role="tooltip"
-                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700"
+                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700"
                       >
                         Add to favourites
                         <div class="tooltip-arrow" data-popper-arrow></div>
                       </div>
                       <button
                         type="button"
-                        class="inline-flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium  text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                        class="inline-flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700"
                       >
                         <svg
                           class="-ms-2 me-2 h-5 w-5"
@@ -434,7 +437,7 @@ const Cart = () => {
                       </button>
                     </div>
                   </div>
-                  <div class="space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                  <div class="space-y-6 overflow-hidden rounded-lg border  bg-white p-6 shadow-sm border-gray-700 ">
                     <a href="#" class="overflow-hidden rounded">
                       <img
                         class="mx-auto h-44 w-44 dark:hidden"
@@ -450,7 +453,7 @@ const Cart = () => {
                     <div>
                       <a
                         href="#"
-                        class="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"
+                        class="text-lg font-semibold leading-tight text-gray-900 hover:underline"
                       >
                         Playstation 5
                       </a>
@@ -460,7 +463,7 @@ const Cart = () => {
                       </p>
                     </div>
                     <div>
-                      <p class="text-lg font-bold text-gray-900 dark:text-white">
+                      <p class="text-lg font-bold text-gray-900">
                         <span class="line-through"> $799,99 </span>
                       </p>
                       <p class="text-lg font-bold leading-tight text-red-600 dark:text-red-500">
@@ -471,7 +474,7 @@ const Cart = () => {
                       <button
                         data-tooltip-target="favourites-tooltip-2"
                         type="button"
-                        class="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white p-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+                        class="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white p-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600  dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
                       >
                         <svg
                           class="h-5 w-5"
@@ -492,14 +495,14 @@ const Cart = () => {
                       <div
                         id="favourites-tooltip-2"
                         role="tooltip"
-                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700"
+                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700"
                       >
                         Add to favourites
                         <div class="tooltip-arrow" data-popper-arrow></div>
                       </div>
                       <button
                         type="button"
-                        class="inline-flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium  text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                        class="inline-flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium   hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                       >
                         <svg
                           class="-ms-2 me-2 h-5 w-5"
@@ -522,8 +525,8 @@ const Cart = () => {
                       </button>
                     </div>
                   </div>
-                  <div class="space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                    <a href="#" class="overflow-hidden rounded">
+                  <div class="space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700">
+                    <div class="overflow-hidden rounded">
                       <img
                         class="mx-auto h-44 w-44 dark:hidden"
                         src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/apple-watch-light.svg"
@@ -534,11 +537,11 @@ const Cart = () => {
                         src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/apple-watch-dark.svg"
                         alt="imac image"
                       />
-                    </a>
+                    </div>
                     <div>
                       <a
                         href="#"
-                        class="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"
+                        class="text-lg font-semibold leading-tight text-gray-900 hover:underline"
                       >
                         Apple Watch Series 8
                       </a>
@@ -548,7 +551,7 @@ const Cart = () => {
                       </p>
                     </div>
                     <div>
-                      <p class="text-lg font-bold text-gray-900 dark:text-white">
+                      <p class="text-lg font-bold text-gray-900">
                         <span class="line-through"> $1799,99 </span>
                       </p>
                       <p class="text-lg font-bold leading-tight text-red-600 dark:text-red-500">
@@ -559,7 +562,7 @@ const Cart = () => {
                       <button
                         data-tooltip-target="favourites-tooltip-3"
                         type="button"
-                        class="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white p-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+                        class="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white p-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600  dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white "
                       >
                         <svg
                           class="h-5 w-5"
@@ -580,7 +583,7 @@ const Cart = () => {
                       <div
                         id="favourites-tooltip-3"
                         role="tooltip"
-                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700"
+                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium opacity-0 shadow-sm transition-opacity duration-300 "
                       >
                         Add to favourites
                         <div class="tooltip-arrow" data-popper-arrow></div>
@@ -588,7 +591,7 @@ const Cart = () => {
 
                       <button
                         type="button"
-                        class="inline-flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium  text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                        class="inline-flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                       >
                         <svg
                           class="-ms-2 me-2 h-5 w-5"
@@ -705,26 +708,26 @@ const Cart = () => {
                 </div>
               </div>
 
-              <div class="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
+              <div class="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700  sm:p-6">
                 <form class="space-y-4">
                   <div>
                     <label
                       for="voucher"
-                      class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                      class="mb-2 block text-sm font-medium text-gray-900 "
                     >
                       Do you have a voucher or gift card?
                     </label>
                     <input
                       type="text"
                       id="voucher"
-                      class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
+                      class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 "
                       placeholder=""
                       required
                     />
                   </div>
                   <button
                     type="submit"
-                    class="flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                    class="flex w-full items-center bg-red-600 justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600"
                   >
                     Apply Code
                   </button>

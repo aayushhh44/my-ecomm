@@ -1,6 +1,12 @@
 import React from "react";
+import products from '../JSON/aesthetic.json';
+
 
 const NewArrival = () => {
+
+  // products.map((item) =>(
+    
+  // ))
   return (
     <div className="sm:p-16 w-full">
       <div className="p-8">
