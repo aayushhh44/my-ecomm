@@ -264,33 +264,33 @@
   "Shoes": [
     {
       "id": "shoes_001",
-      "model": "Nike Air Max 270",
+      "model": "Cortex",
       "releaseYear": 2023,
       "price": "15,000",
       "colorOptions": ["Black", "White", "Red", "Blue"],
       "sizes": ["6", "7", "8", "9", "10"],
       "features": ["Air Cushioning", "Breathable Mesh"],
-      "image": "https://dummyimage.com/600x400/999/fff&text=Nike+Air+Max+270"
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a3829b27-ed75-4863-8e6e-073b4da57112/W+NIKE+CORTEZ+OLY.png"
     },
     {
-      "id": "shoes_002",
+      "id": "Air Jordan 1 Mid",
       "model": "Adidas Ultraboost 22",
       "releaseYear": 2023,
       "price": "18,000",
       "colorOptions": ["Black", "White", "Grey", "Blue"],
       "sizes": ["6", "7", "8", "9", "10"],
       "features": ["Boost Cushioning", "Primeknit Upper"],
-      "image": "https://dummyimage.com/600x400/aaa/fff&text=Adidas+Ultraboost+22"
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4f864b95-0da2-4f66-b1c7-2cfb6e655bc6/AIR+JORDAN+1+MID.png"
     },
     {
       "id": "shoes_003",
-      "model": "Puma RS-X3",
+      "model": "Nike Killshot 2",
       "releaseYear": 2023,
       "price": "14,000",
       "colorOptions": ["White", "Black", "Green", "Purple"],
       "sizes": ["6", "7", "8", "9", "10"],
       "features": ["RS Cushioning", "Retro Design"],
-      "image": "https://dummyimage.com/600x400/bbb/fff&text=Puma+RS-X3"
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2fcacc09-2e2c-483f-8f17-c9cc389cc39e/KILLSHOT+2.png"
     }
   ]
 }
