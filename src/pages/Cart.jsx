@@ -103,7 +103,10 @@ const Cart = () => {
                                 required
                               />
                               <button
-                                onClick={(e) =>{ e.preventDefault(); increment(item?.id)}}
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  increment(item?.id);
+                                }}
                                 type="button"
                                 id="increment-button"
                                 data-input-counter-increment="counter-input"
@@ -196,8 +199,13 @@ const Cart = () => {
                   </div>
                 ) : (
                   <div className="flex flex-col items-center gap-2">
-                    <h2 className="text-3xl font-poppins">Your cart is <span className="text-red-600">Empty</span></h2>
-                    <p className="font-poppins text-sm text-justify">Looks like you've not added anything to your cart. Go ahead and add some items to your cart</p>
+                    <h2 className="text-3xl font-poppins">
+                      Your cart is <span className="text-red-600">Empty</span>
+                    </h2>
+                    <p className="font-poppins text-sm text-justify">
+                      Looks like you've not added anything to your cart. Go
+                      ahead and add some items to your cart
+                    </p>
                   </div>
                 )}
 
